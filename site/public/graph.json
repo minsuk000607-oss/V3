@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "CORE-WRITING-STYLE",
+      "slug": "writing-style",
+      "title": "Writing Style",
+      "category": "CORE",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "CORE-IDENTITY",
+      "slug": "identity",
+      "title": "Identity",
+      "category": "CORE",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "CORE-RESEARCH-PHILOSOPHY",
+      "slug": "research-philosophy",
+      "title": "Research Philosophy",
+      "category": "CORE",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "CORE-DECISION-RULES",
+      "slug": "decision-rules",
+      "title": "Decision Rules",
+      "category": "CORE",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "CORE-THINKING-STYLE",
+      "slug": "thinking-style",
+      "title": "Thinking Style",
+      "category": "CORE",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "CON-00001",
+      "slug": "neuro-fascial-ans-framework",
+      "title": "Neuro-Fascial ANS Framework",
+      "category": "concepts",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "CON-00002",
+      "slug": "shanghanlun-ans-collapse",
+      "title": "상한론 ANS 붕괴 모델",
+      "category": "concepts",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "CON-00003",
+      "slug": "yinyang-biaoli-redefinition",
+      "title": "음양·표리 재정의",
+      "category": "concepts",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "SRC-00001",
+      "slug": "ims-mps-integration",
+      "title": "IMS·MPS 통합 임상 레퍼런스",
+      "category": "sources",
+      "color": "#34d399"
+    },
+    {
+      "id": "ENT-00001",
+      "slug": "dfl",
+      "title": "DFL — Deep Front Line",
+      "category": "entities",
+      "color": "#a78bfa"
+    },
+    {
+      "id": "ENT-00003",
+      "slug": "sfal-sbal",
+      "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+      "category": "entities",
+      "color": "#a78bfa"
+    },
+    {
+      "id": "ENT-00002",
+      "slug": "tj-triple-jiao",
+      "title": "TJ — 삼초경 (Triple Jiao)",
+      "category": "entities",
+      "color": "#a78bfa"
+    }
+  ],
+  "edges": [
+    {
+      "source": "CON-00001",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "CON-00001",
+      "target": "CON-00002"
+    },
+    {
+      "source": "CON-00001",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "CON-00001",
+      "target": "CON-00002"
+    },
+    {
+      "source": "CON-00001",
+      "target": "CON-00003"
+    },
+    {
+      "source": "CON-00001",
+      "target": "CON-00003"
+    },
+    {
+      "source": "CON-00002",
+      "target": "CON-00001"
+    },
+    {
+      "source": "CON-00002",
+      "target": "CON-00003"
+    },
+    {
+      "source": "CON-00002",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "CON-00003",
+      "target": "CON-00001"
+    },
+    {
+      "source": "CON-00003",
+      "target": "CON-00002"
+    },
+    {
+      "source": "CON-00003",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "SRC-00001",
+      "target": "CON-00001"
+    },
+    {
+      "source": "SRC-00001",
+      "target": "CON-00001"
+    },
+    {
+      "source": "SRC-00001",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "SRC-00001",
+      "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00001",
+      "target": "CON-00001"
+    },
+    {
+      "source": "ENT-00001",
+      "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00001",
+      "target": "CON-00003"
+    },
+    {
+      "source": "ENT-00003",
+      "target": "CON-00001"
+    },
+    {
+      "source": "ENT-00003",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "CON-00001"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "CON-00001"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "CON-00002"
+    }
+  ]
+}

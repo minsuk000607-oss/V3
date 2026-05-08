@@ -1,0 +1,1470 @@
+[
+  {
+    "doc_id": "CORE-WRITING-STYLE",
+    "slug": "writing-style",
+    "title": "Writing Style",
+    "category": "CORE",
+    "tags": [
+      "writing-style",
+      "core"
+    ],
+    "section": "TODO",
+    "level": 1,
+    "body": "초안 작성 예정."
+  },
+  {
+    "doc_id": "CORE-IDENTITY",
+    "slug": "identity",
+    "title": "Identity",
+    "category": "CORE",
+    "tags": [
+      "identity",
+      "core",
+      "second-brain"
+    ],
+    "section": "Identity",
+    "level": 1,
+    "body": "나는 한의학, 신경과학, 자율신경계, 근막의학, IMS/MPS, 임상 추론을 통합하는 개인 LLM Wiki OS를 구축한다.\n\n이 위키의 목표는 단순한 노트 저장이 아니라, 내 사고방식과 지식 구조를 LLM이 읽고 확장할 수 있는 형태로 보존하는 것이다."
+  },
+  {
+    "doc_id": "CORE-IDENTITY",
+    "slug": "identity",
+    "title": "Identity",
+    "category": "CORE",
+    "tags": [
+      "identity",
+      "core",
+      "second-brain"
+    ],
+    "section": "핵심 관심 분야",
+    "level": 2,
+    "body": "- 상한론과 육경 체계\n- 방제와 본초\n- 경혈과 경락\n- 자율신경계\n- 신경과학\n- MPS/IMS\n- 근막경선과 Anatomy Trains\n- 임상 추론\n- 의학 연구와 지식 구조화"
+  },
+  {
+    "doc_id": "CORE-IDENTITY",
+    "slug": "identity",
+    "title": "Identity",
+    "category": "CORE",
+    "tags": [
+      "identity",
+      "core",
+      "second-brain"
+    ],
+    "section": "장기 목표",
+    "level": 2,
+    "body": "동서의학을 대립시키지 않고, 상호 보완적이고 검증 가능한 통합 의학 지식 체계를 만든다.\n\n이 위키는 나의 학문적 사고, 임상적 판단, 연구 방향성을 축적하는 제2의 뇌로 운용한다."
+  },
+  {
+    "doc_id": "CORE-RESEARCH-PHILOSOPHY",
+    "slug": "research-philosophy",
+    "title": "Research Philosophy",
+    "category": "CORE",
+    "tags": [
+      "research",
+      "philosophy",
+      "core"
+    ],
+    "section": "TODO",
+    "level": 1,
+    "body": "초안 작성 예정."
+  },
+  {
+    "doc_id": "CORE-DECISION-RULES",
+    "slug": "decision-rules",
+    "title": "Decision Rules",
+    "category": "CORE",
+    "tags": [
+      "decision-rules",
+      "source-hierarchy",
+      "core"
+    ],
+    "section": "Decision Rules",
+    "level": 1,
+    "body": ""
+  },
+  {
+    "doc_id": "CORE-DECISION-RULES",
+    "slug": "decision-rules",
+    "title": "Decision Rules",
+    "category": "CORE",
+    "tags": [
+      "decision-rules",
+      "source-hierarchy",
+      "core"
+    ],
+    "section": "자료 판단 우선순위",
+    "level": 2,
+    "body": "1. 사용자가 직접 제공한 정오표와 수정사항\n2. `raw/` 원자료\n3. `wiki/`의 검토된 문서\n4. 원문, 교과서, 논문, 공식 자료\n5. `generated/`의 AI 파생 결과\n6. 일반 지식"
+  },
+  {
+    "doc_id": "CORE-DECISION-RULES",
+    "slug": "decision-rules",
+    "title": "Decision Rules",
+    "category": "CORE",
+    "tags": [
+      "decision-rules",
+      "source-hierarchy",
+      "core"
+    ],
+    "section": "한의학 해석 규칙",
+    "level": 2,
+    "body": "- 원문과 방증을 먼저 본다.\n- 병기 구조를 우선한다.\n- 현대 생리학적 해석은 보조 해석으로 둔다.\n- 전통 개념과 현대 개념을 혼동하지 않는다.\n- 연결 가능성은 confidence 또는 hypothesis로 표시한다.\n- 검증되지 않은 연결은 research gap으로 남긴다."
+  },
+  {
+    "doc_id": "CORE-DECISION-RULES",
+    "slug": "decision-rules",
+    "title": "Decision Rules",
+    "category": "CORE",
+    "tags": [
+      "decision-rules",
+      "source-hierarchy",
+      "core"
+    ],
+    "section": "AI 사용 규칙",
+    "level": 2,
+    "body": "- AI 생성물은 원문이 아니다.\n- AI는 연결 후보와 구조화 초안을 제시한다.\n- 최종 판단은 사용자가 한다.\n- 불확실한 내용은 단정하지 않는다.\n- 원문 markdown은 명시적 지시 없이 덮어쓰지 않는다.\n- generated layer는 검토 전 파생물로 취급한다."
+  },
+  {
+    "doc_id": "CORE-DECISION-RULES",
+    "slug": "decision-rules",
+    "title": "Decision Rules",
+    "category": "CORE",
+    "tags": [
+      "decision-rules",
+      "source-hierarchy",
+      "core"
+    ],
+    "section": "웹사이트 구현 규칙",
+    "level": 2,
+    "body": "- 최종 산출물은 Railway 배포 가능한 Next.js 웹사이트다.\n- 운영 데이터는 GitHub 저장소의 `wiki/`와 `generated/`를 source of truth로 삼는다.\n- 런타임 파일 쓰기에 의존하지 않는다.\n- AI 생성물은 원문 아래 별도 블록으로 렌더링한다."
+  },
+  {
+    "doc_id": "CORE-THINKING-STYLE",
+    "slug": "thinking-style",
+    "title": "Thinking Style",
+    "category": "CORE",
+    "tags": [
+      "thinking-style",
+      "core",
+      "reasoning"
+    ],
+    "section": "Thinking Style",
+    "level": 1,
+    "body": "나는 단편 정보보다 구조를 우선한다.\n\n정보를 처리할 때 다음 순서를 선호한다.\n\n1. 큰 구조를 먼저 잡는다.\n2. 하위 개념을 분류한다.\n3. 개념 간 관계 및 층위를 연결한다.\n4. 임상적 적용 가능성을 따진다.\n5. 시험용, 발표용, 연구용 산출물로 재가공한다."
+  },
+  {
+    "doc_id": "CORE-THINKING-STYLE",
+    "slug": "thinking-style",
+    "title": "Thinking Style",
+    "category": "CORE",
+    "tags": [
+      "thinking-style",
+      "core",
+      "reasoning"
+    ],
+    "section": "선호하는 사고 방식",
+    "level": 2,
+    "body": "- 원문과 근거를 먼저 본다.\n- 병기 구조를 잡는다.\n- 임상 패턴으로 변환한다.\n- 현대 생리학과 연결할 때는 단정하지 않고 가설 수준을 구분한다.\n- 전통 한의학 개념과 현대 의학 개념을 섞어 쓰지 않는다.\n- 확실한 근거, 내 해석, 새로운 가설, research gap을 구분한다."
+  },
+  {
+    "doc_id": "CORE-THINKING-STYLE",
+    "slug": "thinking-style",
+    "title": "Thinking Style",
+    "category": "CORE",
+    "tags": [
+      "thinking-style",
+      "core",
+      "reasoning"
+    ],
+    "section": "선호하는 출력 방식",
+    "level": 2,
+    "body": "- 핵심 결론을 먼저 제시한다.\n- 구조화된 문단을 선호한다.\n- 필요할 때만 표를 쓴다.\n- 시험용이면 짧고 암기 가능하게 만든다.\n- 연구용이면 근거와 한계를 분리한다.\n- 코드/구현용이면 단계별로 실행 가능하게 쓴다."
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "Neuro-Fascial ANS Framework v2.5",
+    "level": 1,
+    "body": "> 근막경선(Anatomy Trains) · 경맥 · 자율신경계를 통합하여  \n> 인체를 **입력–변환–분배–조절–출력**의 계층적 시스템으로 해석하는 통합 임상 모델\n\n---"
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "핵심 명제",
+    "level": 2,
+    "body": "1. **[[DFL]]만이 원인이다.** SBL·SFL·LL은 표현이다.\n2. **음양은 교감/부교감이 아닌** 구심성(음) / 원심성(양) 방향성이다.\n3. **표리는 교감신경절 공유가 아닌** 미주신경 동시지배로 재정의된다.\n4. **[[상한론 ANS 붕괴 모델|상한론 육경]]은** ANS 붕괴의 7단계 순서로 해석된다.\n\n---"
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "전체 구조 (Layer Architecture)",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "상지 수직 흐름",
+    "level": 3,
+    "body": "```\nDFL (코어·입력: KI·LR·SP)\n    ↓\n횡격막 (ANS 변환 게이트)\n    ↓\nTJ — 삼초경 (전신 ANS 분배)\n    ↓\nSFAL (상지 조절: LU · PC)\n    ↓\nSBAL (상지 출력: LI · SI · HT)\n```"
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "하지 병렬 출력",
+    "level": 3,
+    "body": "```\nDFL\n├── SBL — 후면 긴장 출력 (족태양·수태양)\n├── SFL — 전면 압력 출력 (족양명·수양명)\n└── LL  — 측면 안정 출력 (족소양·수소양)\n```\n\n---"
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "레이어 요약",
+    "level": 2,
+    "body": "| 레이어 | 경맥 | 신경학적 실체 | 핵심 기능 |\n|--------|------|--------------|----------|\n| DFL | KI·LR·SP | 부교감 기반 / 구심성 | 코어 생성·원인 |\n| 횡격막 | — | C3–5 / 미주신경 분기점 | LU(기계) vs PC(기능) |\n| TJ | SJ | 자율신경총 (Plexus) | 전신 ANS 분배 |\n| SFAL | LU·PC | 횡격막 분기 상지 조절 | 호흡·감정 조절 |\n| SBAL | LI·SI·HT | 상지 체성 출력 | 운동·구조·순환 |\n| SBL | BL·SI | T1–S3 교감 과활성 | 후면 긴장 |\n| SFL | ST·LI | T6–T12 교감 탈진 | 전면 지지 |\n| LL | GB·TH | T6–T10 회전 | 측면 안정 |\n\n---"
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "HT 진단 기준",
+    "level": 2,
+    "body": "HT는 반드시 **3요소 동시** 확인:\n\n1. 이상감각 (말초 순환 이상)\n2. 냉감\n3. 수면 장애 (리듬 이상)\n\n> 냉감 단독 = HT 아님. HT는 원인이 아닌 결과이다.\n\n---"
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "임상 알고리즘",
+    "level": 2,
+    "body": "```\n장부 증상 있음\n→ 경맥 특정\n→ 교감↑ / 부교감↑ / 탈진 구분\n→ 독맥·임맥·배수혈 + 처방\n\n장부 증상 없음\n→ 근막경선 먼저\n→ 방사통 패턴\n→ MPS → IMS 순\n```"
+  },
+  {
+    "doc_id": "CON-00001",
+    "slug": "neuro-fascial-ans-framework",
+    "title": "Neuro-Fascial ANS Framework",
+    "category": "concepts",
+    "tags": [
+      "framework",
+      "ANS",
+      "근막경선",
+      "경맥",
+      "통합의학"
+    ],
+    "section": "Related",
+    "level": 2,
+    "body": "- [[DFL]]\n- [[TJ 삼초경]]\n- [[SFAL SBAL]]\n- [[상한론 ANS 붕괴 모델]]\n- [[음양 재정의]]\n- [[표리 재정의]]\n- [[IMS MPS 통합 임상]]"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "상한론 육경 — ANS 붕괴 7단계 모델",
+    "level": 1,
+    "body": "> 장중경의 육경 체계는 **자율신경계의 단계적 붕괴 과정**에 대응하는  \n> 임상 경험 기반 신경과학 모델이다.\n\n---"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "핵심 전제",
+    "level": 2,
+    "body": "```\n12경맥 = 6개 통로 × 교감·부교감\n표리 쌍 = 하나의 신경절 통로를 교감·부교감으로 나눠 표현한 것\n\n폐·대장 = T1-T4·T6-T12 하나의 통로\n위·비   = T6-T12 하나의 통로\n심·소장 = T1-T4 심장 통로\n방광·신 = T1-S3·S2-S4 통로\n심포·삼초 = T1-T5 자율신경 통로\n담·간   = T6-T10 통로\n```\n\n---"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "7단계 진행 모델",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "1단계 — 태양표실 (太陽表實)",
+    "level": 3,
+    "body": "| 항목 | 내용 |\n|------|------|\n| ANS 상태 | 교감신경 **급성 과활성** |\n| 수용체 | NE → α·β 아드레날린 수용체 과자극 |\n| 주증상 | 발열·오한·무한·체통·부긴맥 |\n| 처방 | **마황탕** (에페드린: NE 강제 유리) |\n| 블록 | C3–T1 출력 (경항·체표 긴장) |"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "2단계 — 태양표허 (太陽表虛)",
+    "level": 3,
+    "body": "| 항목 | 내용 |\n|------|------|\n| ANS 상태 | 교감 **탈감작** 시작 |\n| 수용체 | β수용체 내재화(internalization) |\n| 주증상 | 발열·오한·유한·맥완 |\n| 처방 | **계지탕** (신남알데히드: 수용체 재설정) |\n| 블록 | C3–T1 (탈감작 시작) |"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "3단계 — 양명경증 (陽明經證)",
+    "level": 3,
+    "body": "| 항목 | 내용 |\n|------|------|\n| ANS 상태 | 교감 탈진 + **혈관 내 열 팽창** |\n| 수용체 | 체온조절 없는 혈관 확장 |\n| 주증상 | 대열·대한·대갈·맥홍대 (4대증) |\n| 처방 | **백호탕** (CaSO₄: 혈관 내 열 분산) |\n| 블록 | T6–T12 압축 |"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "4단계 — 양명부증 (陽明腑證)",
+    "level": 3,
+    "body": "| 항목 | 내용 |\n|------|------|\n| ANS 상태 | 장관 자율신경 **기능 실패** + 열 고착 |\n| 수용체 | 내압 상승 |\n| 주증상 | 조시·복만통·불대변·맥침실 |\n| 처방 | **승기탕** (안트라퀴논: 연동 강제 유도) |\n| 블록 | L2–L4 전방 엔진 |"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "5단계 — 소양 (少陽)",
+    "level": 3,
+    "body": "| 항목 | 내용 |\n|------|------|\n| ANS 상태 | 자율신경절 **불안정** (교감·부교감 교대 진동) |\n| 수용체 | 신경절 oscillating |\n| 주증상 | 한열왕래·흉협고만·목현·이청 |\n| 처방 | **소시호탕** (Saikosaponin: 신경절 안정화) |\n| 블록 | T6–T12 (흉협 담위 불화) |"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "6단계 — 태음 (太陰)",
+    "level": 3,
+    "body": "| 항목 | 내용 |\n|------|------|\n| ANS 상태 | 부교감 **일방 장악** |\n| 수용체 | 무스카린 수용체 과활성 |\n| 주증상 | 복만·시자리·복통·설사 |\n| 처방 | **이중탕** (Atractylenolide+Shogaol: L4 회복) |\n| 블록 | S2–S4 지지 붕괴 |"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "7단계 — 소음→궐음 (少陰→厥陰)",
+    "level": 3,
+    "body": "| 항목 | 내용 |\n|------|------|\n| ANS 상태 | 중추 각성 실패 → **수용체 소실** |\n| 수용체 | Na⁺채널 임계 저하 |\n| 주증상 | 맥미세·단욕매·사지궐냉→열궐 |\n| 처방 | **사역탕→오매환** (Na⁺채널 강제 개방) |\n| 블록 | T12–L2 축 붕괴 → 전체 통로 |\n\n---"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "맥상 → ANS 상태 대응",
+    "level": 2,
+    "body": "| 맥상 | ANS 상태 | 기전 |\n|------|----------|------|\n| 浮緊 (부긴) | 교감 급성 과활성 | 말초 혈관 수축 |\n| 浮緩 (부완) | 교감 탈감작 시작 | β수용체 내재화 |\n| 洪大 (홍대) | 혈관 확장·열 팽창 | 체온조절 실패 |\n| 沈實 (침실) | 장관 내압 상승 | 자율신경 기능 실패 |\n| 弦 (현) | 신경절 불안정 | 교감·부교감 oscillating |\n| 微細 (미세) | 중추 ANS 기능 실패 | 심박출량 임계 감소 |\n\n---"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "블록별 육경 매핑",
+    "level": 2,
+    "body": "| 블록 | 해당 육경 | 임상 패턴 |\n|------|----------|----------|\n| C3–T1 | 태양표증 / 소양발열 / 궐음탁음 | 경항·체표 긴장 출력 |\n| T6–T12 | 소양흉협 / 양명열성 | 흉복부 압축·집중 |\n| T12–L2 | 소음한화(신양허) / 소음열화(신음허) | 축 붕괴 |\n| L2–L4 | 양명리실 / 태음중초한습 | 복강 충만 |\n| L4–S2 | 어혈하초 / 기울사역 | 사말 경맥 폐색 |\n| S2–S4 | 태음한증하리 / 소음고섭실패 | 지지 붕괴 |\n\n---"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "폐·대장 통로 붕괴 순서",
+    "level": 2,
+    "body": "```\n양명부증 (대장 열 고착·조시)\n↓ 해소 안 되면\n소양 (신경절 불안정·한열왕래)\n↓\n태음 (부교감 장악·해수·흉민 시작)\n↓\n소음 (호흡근 무력·숨참)\n↓\n궐음 (전체 통로 붕괴)\n```\n\n> 대장에서 시작해서 표리인 폐까지 끌어내리는  \n> **하나의 통로 순차 붕괴**"
+  },
+  {
+    "doc_id": "CON-00002",
+    "slug": "shanghanlun-ans-collapse",
+    "title": "상한론 ANS 붕괴 모델",
+    "category": "concepts",
+    "tags": [
+      "상한론",
+      "ANS",
+      "육경",
+      "수용체약리학"
+    ],
+    "section": "Related",
+    "level": 2,
+    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[표리 재정의]]\n- [[DFL]]\n- [[IMS MPS 통합 임상]]"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "음양·표리 재정의 — 신경과학적 번역",
+    "level": 1,
+    "body": "---"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "음양 재정의",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "기존 해석 (폐기)",
+    "level": 3,
+    "body": "> 음 = 부교감신경  \n> 양 = 교감신경\n\n**문제:** 교감/부교감은 기능적 분리이고,  \n실제 임상에서는 같은 장기에 교감·부교감이 동시 작용한다.\n\n---"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "새로운 정의",
+    "level": 3,
+    "body": "| 개념 | 신경학적 실체 | 방향 |\n|------|-------------|------|\n| **陰 (음)** | 구심성 신호 (Afferent) | 말초 → 중추 |\n| **陽 (양)** | 원심성 신호 (Efferent) | 중추 → 말초 |\n\n```\n음 = 정보가 들어오는 방향 (감각·수용)\n양 = 명령이 나가는 방향 (운동·분비)\n```"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "임상 적용",
+    "level": 3,
+    "body": "```\n음허 = 구심성 입력 부족\n    → 피드백 감소 → 조절 실패\n\n양허 = 원심성 출력 부족\n    → 효과기 반응 저하\n\n음양 불균형 = 입력-출력 비율 이상\n```\n\n---"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "표리 재정의",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "기존 해석 (폐기)",
+    "level": 3,
+    "body": "> 표리 = 교감신경절 공유\n\n**문제:** 폐(T1-T4)와 대장(T6-T12)은  \n교감신경절을 공유하지 않는다.  \n그런데 임상적으로 명백히 표리 관계다.\n\n---"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "새로운 정의",
+    "level": 3,
+    "body": "> **표리 = 미주신경(CN X) 동시지배**\n\n```\n폐수 T3 ≠ 대장수 T11\n→ 교감신경절 다름\n\n그러나\n폐 ← 미주신경 → 대장\n→ 동일한 미주신경이 양쪽 지배\n\n= 표리 관계 성립\n```"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "6쌍 표리의 신경학적 근거",
+    "level": 3,
+    "body": "| 표 | 리 | 공유 신경 | 통로 |\n|----|-----|----------|------|\n| 폐 (LU) | 대장 (LI) | 미주신경 | T1-T4 · T6-T12 |\n| 위 (ST) | 비 (SP) | 미주신경 복강지 | T6-T12 |\n| 심 (HT) | 소장 (SI) | 미주신경 심장지 | T1-T4 |\n| 방광 (BL) | 신 (KI) | 골반내장신경 | T1-S3 · S2-S4 |\n| 심포 (PC) | 삼초 (TJ) | 미주신경 | T1-T5 |\n| 담 (GB) | 간 (LR) | 미주신경 복강지 | T6-T10 |\n\n---"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "통합 해석",
+    "level": 2,
+    "body": "```\n경맥 =\n자율신경 구심성으로 받고 (음)\n체성신경 원심성으로 내보내는 (양)\n쌍방향 반사 루프의 체표 지도\n\n근막경선 = 경맥의 체표 레벨만\n경맥 = 근막경선 + 자율신경 루프 + 장부\n```\n\n---"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "임상 함의",
+    "level": 2,
+    "body": "표리 치료의 원리:\n```\n대장 문제\n→ 미주신경 공유 경로로\n→ 폐 기능에 영향\n→ 폐 계열 혈위 병용 가능\n\n= 표리 취혈의 신경학적 근거\n```"
+  },
+  {
+    "doc_id": "CON-00003",
+    "slug": "yinyang-biaoli-redefinition",
+    "title": "음양·표리 재정의",
+    "category": "concepts",
+    "tags": [
+      "음양",
+      "표리",
+      "ANS",
+      "신경과학",
+      "재정의"
+    ],
+    "section": "Related",
+    "level": 2,
+    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[상한론 ANS 붕괴 모델]]\n- [[DFL]]"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "IMS·MPS 통합 임상 레퍼런스",
+    "level": 1,
+    "body": "> Gunn IMS + Travell MPS + Anatomy Trains을  \n> 척수분절 신경해부학 축으로 통합한 즉시적용 임상 레퍼런스\n\n---"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "핵심 개념 비교",
+    "level": 2,
+    "body": "| | Gunn IMS | Travell MPS |\n|--|----------|-------------|\n| 이론 기반 | 신경병증성 통증 / 탈신경 과민 | 근막 통증 유발점 |\n| 치료 타겟 | 척수분절 기반 근육군 | 유발점 (TP) 직접 |\n| 침 자입 | 분절 전체 | TP 국소 |\n| 효과 지표 | LTR (국소 연축반응) | LTR + 연관통 소실 |\n| 경혈 대응 | 화타협척혈 / 방광경 배수혈 | 아시혈 |\n\n---"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "Gunn IMS 이론",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "핵심: 탈신경 과민 (Denervation Supersensitivity)",
+    "level": 3,
+    "body": "```\n신경근 압박 (Radiculopathy)\n    ↓\n해당 분절 근육 탈신경\n    ↓\n아드레날린 수용체 과민\n    ↓\n근육 단축·경직 (shortened muscle)\n    ↓\n통증·기능 제한\n```"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "치료 원리",
+    "level": 3,
+    "body": "```\n분절 침 자입 → LTR 유발\n→ 근육 이완 → 신장 반사 차단\n→ 혈류 회복 → 신경 재생\n```\n\n---"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "척수분절 임상 매핑",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "경추부 (C3–T1)",
+    "level": 3,
+    "body": "| 분절 | 근육 | 임상 |\n|------|------|------|\n| C3–4 | 승모근 상부, 흉쇄유돌근 | 경항통, 두통 |\n| C5 | 삼각근, 극상근 | 견관절 외전 제한 |\n| C6 | 이두근, 요측수근굴근 | 엄지·2지 방사통 |\n| C7 | 삼두근, 척측수근굴근 | 3지 방사통, 테니스엘보 |\n| C8–T1 | 소지구근, 골간근 | 4·5지 이상감각 |"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "요천추부 (L1–S3)",
+    "level": 3,
+    "body": "| 분절 | 근육 | 임상 |\n|------|------|------|\n| L1–2 | 장요근 | 서혜부통, 대퇴 전면 |\n| L3–4 | 대퇴사두근 | 슬관절 전면, 내측 |\n| L4–5 | 전경골근, 장지신근 | 족배·1지 방사통 |\n| L5–S1 | 비복근, 가자미근 | 종아리·5지 방사통 |\n| S2–4 | 골반저근 | 회음부·항문 방사통 |\n\n---"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "MPS 유발점 핵심 체인",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "경추–견갑 체인",
+    "level": 3,
+    "body": "```\n승모근 상부 TP\n→ 후두·측두부 연관통\n→ 흉쇄유돌근 위성 TP\n→ 안면·측두 연관통 확장\n```"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "요부–하지 체인",
+    "level": 3,
+    "body": "```\n장요근 TP\n→ 요부·서혜부·대퇴전면 연관통\n→ 대퇴직근 위성 TP\n→ 슬개골 하방 연관통\n```\n\n---"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "임상 결정 알고리즘",
+    "level": 2,
+    "body": "```\n환자 주소증\n    ↓\n장부 증상 있음?\n├── Yes → [[Neuro-Fascial ANS Framework]] 적용\n│         경맥 특정 → 배수혈 + 처방\n└── No  → 근막경선 먼저\n          ↓\n          방사통 패턴 확인\n          ├── 분절 패턴 → IMS 우선\n          └── 유발점 뚜렷 → MPS 우선\n```\n\n---"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "경혈 대응표",
+    "level": 2,
+    "body": "| IMS/MPS 구조 | 한의학 대응 |\n|-------------|-----------|\n| 화타협척혈 | 독맥 방광경 1선 |\n| 근육 TP (아시혈) | 아시혈 |\n| 척수분절 배수혈 | 방광경 배수혈 |\n| 신경절 자극점 | 교감신경절 = 배수혈 위치 |\n\n---"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "치료 우선순위",
+    "level": 2,
+    "body": "```\n1. 처방 (수용체 레벨)\n2. 독맥·임맥·배수혈 (신경절 레벨)\n3. 경혈 (경맥 레벨)\n4. 근막경선 (근막 레벨)\n5. MPS → IMS (국소 레벨)\n```"
+  },
+  {
+    "doc_id": "SRC-00001",
+    "slug": "ims-mps-integration",
+    "title": "IMS·MPS 통합 임상 레퍼런스",
+    "category": "sources",
+    "tags": [
+      "IMS",
+      "MPS",
+      "Gunn",
+      "Travell",
+      "근막통증",
+      "척수분절",
+      "침구"
+    ],
+    "section": "Related",
+    "level": 2,
+    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[DFL]]\n- [[상한론 ANS 붕괴 모델]]"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "DFL — Deep Front Line (심부전면선)",
+    "level": 1,
+    "body": "> 지면 반력을 내측 압력으로 변환하여  \n> 복압과 척추 안정성을 형성하는 **코어 생성·입력 시스템**\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "절대 원칙",
+    "level": 2,
+    "body": "> **DFL만이 원인이다. 나머지는 표현이다.**  \n> 출력 레이어(SBL·SFL·LL)만 치료하면 반드시 재발한다.\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "해부학적 연속선",
+    "level": 2,
+    "body": "```\n족저근막\n    ↓\n후경골근 / FDL / FHL\n    ↓\n내전근군 (Adductors)\n    ↓\n골반저근 (Pelvic Floor)\n    ↓\n장요근 (Iliopsoas)\n    ↓\n횡격막 (Diaphragm) ← ANS 게이트\n    ↓\n경부 심부굴근 (Longus colli / Longus capitis)\n```\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "경맥 대응",
+    "level": 2,
+    "body": "| 근육 구간 | 경맥 |\n|----------|------|\n| 내전근 | SP (비경) — 전면 루트 |\n| 장요근·골반저 | KI (신경) — 심부 축 |\n| 횡격막·측면 | LR (간경) — 측면·회전 루트 |"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "두면부 분지",
+    "level": 3,
+    "body": "```\n횡격막 이후 3갈래:\n\nSP (비) → 복직근 → 흉근 → 전면 얼굴 (처짐·무거움)\nKI (신) → 척추 → 인후 → 깊은 목 (삼킴 문제)\nLR (간) → 늑골 → 측면 → 측두부·턱·눈 (두통·턱 긴장)\n```\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "신경 특성",
+    "level": 2,
+    "body": "- 부교감 기반\n- 구심성 우세 (정보 입력)\n- ANS 레벨 1 (중추)\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "핵심 기능",
+    "level": 2,
+    "body": "1. 내측 압력 유지\n2. 복압 형성\n3. 척추 안정\n4. 장부 상태의 근막 번역\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "임상 단서",
+    "level": 2,
+    "body": "| 소견 | 의미 |\n|------|------|\n| 복직근 긴장 | 교감↑ |\n| 복직근 무력 | 비경(DFL) 붕괴 |\n| 장요근 단축 | 골반 전방경사 + 요추 과전만 |\n| 후경골근 약화 | 편평족 + 내측 압력 소실 |\n| 골반저근 경직 | 하초 부교감 조절 이상 |\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "횡격막 분기 (ANS 게이트)",
+    "level": 2,
+    "body": "```\nDFL (압력 시스템)\n    ↓ 횡격막\n    ↓\nLU ← C3-5 체성신경 → 기계적 호흡 (숨이 안됨)\nPC ← 미주신경      → ANS·감정 조절 (답답함)\n```\n\n> 같은 구조에서 **기계(LU) vs 기능(PC)** 이 갈린다\n\n---"
+  },
+  {
+    "doc_id": "ENT-00001",
+    "slug": "dfl",
+    "title": "DFL — Deep Front Line",
+    "category": "entities",
+    "tags": [
+      "근막경선",
+      "DFL",
+      "코어",
+      "ANS",
+      "KI",
+      "LR",
+      "SP"
+    ],
+    "section": "Related",
+    "level": 2,
+    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[TJ 삼초경]]\n- [[SFAL SBAL]]\n- [[상한론 ANS 붕괴 모델]]\n- [[음양·표리 재정의]]"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "level": 1,
+    "body": "---"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "SFAL — Superficial Front Arm Line (상지 조절)",
+    "level": 2,
+    "body": "> 횡격막에서 분기된 ANS가 상지에서 **조절 형태**로 나타나는 레이어"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "구성",
+    "level": 3,
+    "body": "**LU 계열 (요측):**\n- 대흉근 상부\n- 소흉근\n- 이두근\n- 신경: C3–5 체성신경 → **기계적 호흡·물리적**\n\n**PC 계열 (중앙):**\n- 대흉근 하부\n- 전거근\n- 회내근\n- 신경: 미주신경 → **ANS·감정 조절**\n\n> LU와 PC는 연속이 아니라 **분기**이다.  \n> 같은 횡격막에서 다른 신경 경로로 갈린다."
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "LU vs PC 감별",
+    "level": 3,
+    "body": "| | LU | PC |\n|--|----|----|\n| 증상 | \"숨이 실제로 안 쉬어져요\" | \"가슴이 답답하고 불안해요\" |\n| 신경 | C3–5 체성 | 미주신경 |\n| 성격 | 기계적·물리적 | 기능적·감정적 |\n\n---"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "SBAL — Superficial Back Arm Line (상지 출력)",
+    "level": 2,
+    "body": "> SFAL에서 형성된 조절 상태가 **물리적 기능으로 출력**되는 레이어"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "구성",
+    "level": 3,
+    "body": "| 경맥 | 기능 | 임상 |\n|------|------|------|\n| **LI (大腸)** | 운동 출력 / 파지·조작 | 테니스엘보 |\n| **SI (小腸)** | 구조 지지 / 견갑 안정 | 견갑불안정 |\n| **HT (心)** | 순환·감각·리듬 | 척측 이상감각 + 수면 |\n\n---"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "HT 진단 기준 — 핵심",
+    "level": 2,
+    "body": "> **반드시 3요소 동시** 확인\n\n1. 이상감각 (말초 순환 이상)\n2. 냉감\n3. 수면 장애 (리듬 이상)\n\n```\n냉감 단독 = HT 아님\nHT는 원인이 아닌 결과\n```\n\n---"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "전체 상지 흐름",
+    "level": 2,
+    "body": "```\n[횡격막 게이트]\n    ↓ C3-5           ↓ 미주신경\n  LU (기계)         PC (기능)\n    ↓                 ↓\n  [SFAL 조절]\n    ↓\n  LI (운동)  SI (구조)  HT (순환)\n    ↓\n  [SBAL 출력]\n```"
+  },
+  {
+    "doc_id": "ENT-00003",
+    "slug": "sfal-sbal",
+    "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+    "category": "entities",
+    "tags": [
+      "SFAL",
+      "SBAL",
+      "LU",
+      "PC",
+      "LI",
+      "SI",
+      "HT",
+      "상지"
+    ],
+    "section": "Related",
+    "level": 2,
+    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[DFL]]\n- [[TJ 삼초경]]"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "TJ — 삼초경 (Triple Jiao)",
+    "level": 1,
+    "body": "> 특정 경선이나 장기가 아닌  \n> **전신 자율신경 분배 네트워크**\n\n---"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "핵심 정의",
+    "level": 2,
+    "body": "| 항목 | 내용 |\n|------|------|\n| 위치 | **없음** (전신 분포) |\n| 장기 | **없음** |\n| 경선 고정 | **불가** |\n| 신경학적 실체 | 자율신경총 (Autonomic Plexus) |\n| ANS 레벨 | 레벨 2 (신경절 불안정) |\n\n---"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "왜 SBAL이 아닌가",
+    "level": 2,
+    "body": "기존 해석: TJ = SBAL (팔 뒤쪽 경선)에 포함\n\n**오류:**\n```\nTJ = 전신 유동 네트워크\n→ 팔 뒤쪽(SBAL)으로 위치 고정 불가\n→ SBAL에 포함 시:\n   전신 네트워크를 '팔 뒤쪽 경선'으로 격하시키는 이론적 오류\n```\n\n**결론:** TJ는 [[Neuro-Fascial ANS Framework]]에서 **독립 분배 레이어**\n\n---"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "ANS 시스템에서의 역할",
+    "level": 2,
+    "body": "```\n횡격막 (ANS 게이트)\n    ↓\nTJ (전신 분배)\n    ↓\nSFAL (상지 조절)  ←→  SBAL (상지 출력)\n    ↓\nSBL / SFL / LL (하지 출력)\n```\n\n---"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "TJ 이상 임상 패턴",
+    "level": 2,
+    "body": "- 한열왕래 (寒熱往來)\n- 전신 불안\n- 비정형 통증 (위치 불일정)\n- [[상한론 ANS 붕괴 모델|소양병]] 패턴과 대응\n\n---"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "자율신경총 대응",
+    "level": 2,
+    "body": "| TJ 영역 | 신경총 |\n|---------|--------|\n| 上焦 | 심장신경총 (Cardiac plexus) |\n| 中焦 | 복강신경총 (Celiac plexus) |\n| 下焦 | 하복신경총 (Hypogastric plexus) |\n\n---"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "처방 대응",
+    "level": 2,
+    "body": "**소시호탕** (Saikosaponin)\n- 자율신경절 직접 안정화\n- 소양병 = TJ 레이어 불안정"
+  },
+  {
+    "doc_id": "ENT-00002",
+    "slug": "tj-triple-jiao",
+    "title": "TJ — 삼초경 (Triple Jiao)",
+    "category": "entities",
+    "tags": [
+      "삼초",
+      "ANS",
+      "자율신경총",
+      "TJ"
+    ],
+    "section": "Related",
+    "level": 2,
+    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[SFAL SBAL]]\n- [[DFL]]\n- [[상한론 ANS 붕괴 모델]]"
+  }
+]

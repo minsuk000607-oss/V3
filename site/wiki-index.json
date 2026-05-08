@@ -1,0 +1,66 @@
+[
+  {
+    "id": "CORE-DECISION-RULES",
+    "slug": "decision-rules",
+    "title": "Decision Rules",
+    "aliases": [],
+    "category": "CORE",
+    "tags": [
+      "decision-rules",
+      "source-hierarchy",
+      "core"
+    ],
+    "content": "\n# Decision Rules\n\n## 자료 판단 우선순위\n\n1. 사용자가 직접 제공한 정오표와 수정사항\n2. `raw/` 원자료\n3. `wiki/`의 검토된 문서\n4. 원문, 교과서, 논문, 공식 자료\n5. `generated/`의 AI 파생 결과\n6. 일반 지식\n\n## 한의학 해석 규칙\n\n- 원문과 방증을 먼저 본다.\n- 병기 구조를 우선한다.\n- 현대 생리학적 해석은 보조 해석으로 둔다.\n- 전통 개념과 현대 개념을 혼동하지 않는다.\n- 연결 가능성은 confidence 또는 hypothesis로 표시한다.\n- 검증되지 않은 연결은 research gap으로 남긴다.\n\n## AI 사용 규칙\n\n- AI 생성물은 원문이 아니다.\n- AI는 연결 후보와 구조화 초안을 제시한다.\n- 최종 판단은 사용자가 한다.\n- 불확실한 내용은 단정하지 않는다.\n- 원문 markdown은 명시적 지시 없이 덮어쓰지 않는다.\n- generated layer는 검토 전 파생물로 취급한다.\n\n## 웹사이트 구현 규칙\n\n- 최종 산출물은 Vercel 배포 가능한 Next.js 웹사이트다.\n- Obsidian markdown은 source of truth다.\n- AI 생성물은 원문 아래 별도 블록으로 렌더링한다.\n- Vercel production에서 영구 파일 쓰기에 의존하지 않는다."
+  },
+  {
+    "id": "CORE-IDENTITY",
+    "slug": "identity",
+    "title": "Identity",
+    "aliases": [],
+    "category": "CORE",
+    "tags": [
+      "identity",
+      "core",
+      "second-brain"
+    ],
+    "content": "\n# Identity\n\n나는 한의학, 신경과학, 자율신경계, 근막의학, IMS/MPS, 임상 추론을 통합하는 개인 LLM Wiki OS를 구축한다.\n\n이 위키의 목표는 단순한 노트 저장이 아니라, 내 사고방식과 지식 구조를 LLM이 읽고 확장할 수 있는 형태로 보존하는 것이다.\n\n## 핵심 관심 분야\n\n- 상한론과 육경 체계\n- 방제와 본초\n- 경혈과 경락\n- 자율신경계\n- 신경과학\n- MPS/IMS\n- 근막경선과 Anatomy Trains\n- 임상 추론\n- 의학 연구와 지식 구조화\n\n## 장기 목표\n\n동서의학을 대립시키지 않고, 상호 보완적이고 검증 가능한 통합 의학 지식 체계를 만든다.\n\n이 위키는 나의 학문적 사고, 임상적 판단, 연구 방향성을 축적하는 제2의 뇌로 운용한다."
+  },
+  {
+    "id": "CORE-RESEARCH-PHILOSOPHY",
+    "slug": "research-philosophy",
+    "title": "Research Philosophy",
+    "aliases": [],
+    "category": "CORE",
+    "tags": [
+      "research",
+      "philosophy",
+      "core"
+    ],
+    "content": "\n# TODO\n\n초안 작성 예정.\n"
+  },
+  {
+    "id": "CORE-THINKING-STYLE",
+    "slug": "thinking-style",
+    "title": "Thinking Style",
+    "aliases": [],
+    "category": "CORE",
+    "tags": [
+      "thinking-style",
+      "core",
+      "reasoning"
+    ],
+    "content": "\n# Thinking Style\n\n나는 단편 정보보다 구조를 우선한다.\n\n정보를 처리할 때 다음 순서를 선호한다.\n\n1. 큰 구조를 먼저 잡는다.\n2. 하위 개념을 분류한다.\n3. 개념 간 관계 및 층위를 연결한다.\n4. 임상적 적용 가능성을 따진다.\n5. 시험용, 발표용, 연구용 산출물로 재가공한다.\n\n## 선호하는 사고 방식\n\n- 원문과 근거를 먼저 본다.\n- 병기 구조를 잡는다.\n- 임상 패턴으로 변환한다.\n- 현대 생리학과 연결할 때는 단정하지 않고 가설 수준을 구분한다.\n- 전통 한의학 개념과 현대 의학 개념을 섞어 쓰지 않는다.\n- 확실한 근거, 내 해석, 새로운 가설, research gap을 구분한다.\n\n## 선호하는 출력 방식\n\n- 핵심 결론을 먼저 제시한다.\n- 구조화된 문단을 선호한다.\n- 필요할 때만 표를 쓴다.\n- 시험용이면 짧고 암기 가능하게 만든다.\n- 연구용이면 근거와 한계를 분리한다.\n- 코드/구현용이면 단계별로 실행 가능하게 쓴다."
+  },
+  {
+    "id": "CORE-WRITING-STYLE",
+    "slug": "writing-style",
+    "title": "Writing Style",
+    "aliases": [],
+    "category": "CORE",
+    "tags": [
+      "writing-style",
+      "core"
+    ],
+    "content": "\n# TODO\n\n초안 작성 예정.\n"
+  }
+]
