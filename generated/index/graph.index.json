@@ -1,0 +1,459 @@
+{
+  "nodes": [
+    {
+      "id": "CORE-WRITING-STYLE",
+      "slug": "writing-style",
+      "title": "Writing Style",
+      "category": "CORE",
+      "tags": [
+        "writing-style",
+        "core"
+      ],
+      "aliases": [],
+      "headings": [
+        "TODO"
+      ],
+      "priorities": {
+        "clinical": 3,
+        "research": 3,
+        "foundational": 3
+      }
+    },
+    {
+      "id": "CORE-IDENTITY",
+      "slug": "identity",
+      "title": "Identity",
+      "category": "CORE",
+      "tags": [
+        "identity",
+        "core",
+        "second-brain"
+      ],
+      "aliases": [],
+      "headings": [
+        "Identity",
+        "핵심 관심 분야",
+        "장기 목표"
+      ],
+      "priorities": {
+        "clinical": 3,
+        "research": 3,
+        "foundational": 3
+      }
+    },
+    {
+      "id": "CORE-RESEARCH-PHILOSOPHY",
+      "slug": "research-philosophy",
+      "title": "Research Philosophy",
+      "category": "CORE",
+      "tags": [
+        "research",
+        "philosophy",
+        "core"
+      ],
+      "aliases": [],
+      "headings": [
+        "TODO"
+      ],
+      "priorities": {
+        "clinical": 3,
+        "research": 3,
+        "foundational": 3
+      }
+    },
+    {
+      "id": "CORE-DECISION-RULES",
+      "slug": "decision-rules",
+      "title": "Decision Rules",
+      "category": "CORE",
+      "tags": [
+        "decision-rules",
+        "source-hierarchy",
+        "core"
+      ],
+      "aliases": [],
+      "headings": [
+        "Decision Rules",
+        "자료 판단 우선순위",
+        "한의학 해석 규칙",
+        "AI 사용 규칙",
+        "웹사이트 구현 규칙"
+      ],
+      "priorities": {
+        "clinical": 3,
+        "research": 3,
+        "foundational": 3
+      }
+    },
+    {
+      "id": "CORE-THINKING-STYLE",
+      "slug": "thinking-style",
+      "title": "Thinking Style",
+      "category": "CORE",
+      "tags": [
+        "thinking-style",
+        "core",
+        "reasoning"
+      ],
+      "aliases": [],
+      "headings": [
+        "Thinking Style",
+        "선호하는 사고 방식",
+        "선호하는 출력 방식"
+      ],
+      "priorities": {
+        "clinical": 3,
+        "research": 3,
+        "foundational": 3
+      }
+    },
+    {
+      "id": "CON-00001",
+      "slug": "neuro-fascial-ans-framework",
+      "title": "Neuro-Fascial ANS Framework",
+      "category": "concepts",
+      "tags": [
+        "framework",
+        "ANS",
+        "근막경선",
+        "경맥",
+        "통합의학"
+      ],
+      "aliases": [
+        "신경근막ANS프레임워크",
+        "NFA Framework",
+        "v2.5"
+      ],
+      "headings": [
+        "Neuro-Fascial ANS Framework v2.5",
+        "핵심 명제",
+        "전체 구조 (Layer Architecture)",
+        "상지 수직 흐름",
+        "하지 병렬 출력",
+        "레이어 요약",
+        "HT 진단 기준",
+        "임상 알고리즘",
+        "Related"
+      ],
+      "priorities": {
+        "clinical": 5,
+        "research": 5,
+        "foundational": 5
+      }
+    },
+    {
+      "id": "CON-00002",
+      "slug": "shanghanlun-ans-collapse",
+      "title": "상한론 ANS 붕괴 모델",
+      "category": "concepts",
+      "tags": [
+        "상한론",
+        "ANS",
+        "육경",
+        "수용체약리학"
+      ],
+      "aliases": [
+        "상한론 ANS 붕괴 7단계",
+        "육경 자율신경 해석",
+        "Shanghanlun ANS"
+      ],
+      "headings": [
+        "상한론 육경 — ANS 붕괴 7단계 모델",
+        "핵심 전제",
+        "7단계 진행 모델",
+        "1단계 — 태양표실 (太陽表實)",
+        "2단계 — 태양표허 (太陽表虛)",
+        "3단계 — 양명경증 (陽明經證)",
+        "4단계 — 양명부증 (陽明腑證)",
+        "5단계 — 소양 (少陽)",
+        "6단계 — 태음 (太陰)",
+        "7단계 — 소음→궐음 (少陰→厥陰)"
+      ],
+      "priorities": {
+        "clinical": 5,
+        "research": 5,
+        "foundational": 5
+      }
+    },
+    {
+      "id": "CON-00003",
+      "slug": "yinyang-biaoli-redefinition",
+      "title": "음양·표리 재정의",
+      "category": "concepts",
+      "tags": [
+        "음양",
+        "표리",
+        "ANS",
+        "신경과학",
+        "재정의"
+      ],
+      "aliases": [
+        "음양 재정의",
+        "표리 재정의"
+      ],
+      "headings": [
+        "음양·표리 재정의 — 신경과학적 번역",
+        "음양 재정의",
+        "기존 해석 (폐기)",
+        "새로운 정의",
+        "임상 적용",
+        "표리 재정의",
+        "기존 해석 (폐기)",
+        "새로운 정의",
+        "6쌍 표리의 신경학적 근거",
+        "통합 해석"
+      ],
+      "priorities": {
+        "clinical": 4,
+        "research": 5,
+        "foundational": 5
+      }
+    },
+    {
+      "id": "SRC-00001",
+      "slug": "ims-mps-integration",
+      "title": "IMS·MPS 통합 임상 레퍼런스",
+      "category": "sources",
+      "tags": [
+        "IMS",
+        "MPS",
+        "Gunn",
+        "Travell",
+        "근막통증",
+        "척수분절",
+        "침구"
+      ],
+      "aliases": [
+        "IMS MPS 통합",
+        "Gunn IMS",
+        "Travell MPS"
+      ],
+      "headings": [
+        "IMS·MPS 통합 임상 레퍼런스",
+        "핵심 개념 비교",
+        "Gunn IMS 이론",
+        "핵심: 탈신경 과민 (Denervation Supersensitivity)",
+        "치료 원리",
+        "척수분절 임상 매핑",
+        "경추부 (C3–T1)",
+        "요천추부 (L1–S3)",
+        "MPS 유발점 핵심 체인",
+        "경추–견갑 체인"
+      ],
+      "priorities": {
+        "clinical": 5,
+        "research": 4,
+        "foundational": 4
+      }
+    },
+    {
+      "id": "ENT-00001",
+      "slug": "dfl",
+      "title": "DFL — Deep Front Line",
+      "category": "entities",
+      "tags": [
+        "근막경선",
+        "DFL",
+        "코어",
+        "ANS",
+        "KI",
+        "LR",
+        "SP"
+      ],
+      "aliases": [
+        "Deep Front Line",
+        "심부전면선",
+        "코어 입력 시스템"
+      ],
+      "headings": [
+        "DFL — Deep Front Line (심부전면선)",
+        "절대 원칙",
+        "해부학적 연속선",
+        "경맥 대응",
+        "두면부 분지",
+        "신경 특성",
+        "핵심 기능",
+        "임상 단서",
+        "횡격막 분기 (ANS 게이트)",
+        "Related"
+      ],
+      "priorities": {
+        "clinical": 5,
+        "research": 5,
+        "foundational": 5
+      }
+    },
+    {
+      "id": "ENT-00003",
+      "slug": "sfal-sbal",
+      "title": "SFAL · SBAL — 상지 조절·출력 레이어",
+      "category": "entities",
+      "tags": [
+        "SFAL",
+        "SBAL",
+        "LU",
+        "PC",
+        "LI",
+        "SI",
+        "HT",
+        "상지"
+      ],
+      "aliases": [
+        "SFAL",
+        "SBAL",
+        "상지 레이어"
+      ],
+      "headings": [
+        "SFAL · SBAL — 상지 조절·출력 레이어",
+        "SFAL — Superficial Front Arm Line (상지 조절)",
+        "구성",
+        "LU vs PC 감별",
+        "SBAL — Superficial Back Arm Line (상지 출력)",
+        "구성",
+        "HT 진단 기준 — 핵심",
+        "전체 상지 흐름",
+        "Related"
+      ],
+      "priorities": {
+        "clinical": 4,
+        "research": 4,
+        "foundational": 4
+      }
+    },
+    {
+      "id": "ENT-00002",
+      "slug": "tj-triple-jiao",
+      "title": "TJ — 삼초경 (Triple Jiao)",
+      "category": "entities",
+      "tags": [
+        "삼초",
+        "ANS",
+        "자율신경총",
+        "TJ"
+      ],
+      "aliases": [
+        "삼초경",
+        "Triple Jiao",
+        "SJ",
+        "三焦"
+      ],
+      "headings": [
+        "TJ — 삼초경 (Triple Jiao)",
+        "핵심 정의",
+        "왜 SBAL이 아닌가",
+        "ANS 시스템에서의 역할",
+        "TJ 이상 임상 패턴",
+        "자율신경총 대응",
+        "처방 대응",
+        "Related"
+      ],
+      "priorities": {
+        "clinical": 4,
+        "research": 5,
+        "foundational": 5
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "CON-00001",
+      "target": "ENT-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00001",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00001",
+      "target": "CON-00003",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00002",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00002",
+      "target": "CON-00003",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00002",
+      "target": "ENT-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00003",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00003",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00003",
+      "target": "ENT-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "SRC-00001",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "SRC-00001",
+      "target": "ENT-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "SRC-00001",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00001",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00001",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00001",
+      "target": "CON-00003",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00003",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00003",
+      "target": "ENT-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00002",
+      "target": "ENT-00001",
+      "type": "wikilink"
+    }
+  ]
+}

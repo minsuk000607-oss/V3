@@ -1,0 +1,324 @@
+[
+  {
+    "file": "site/lib/search.ts",
+    "kind": "function",
+    "name": "loadIndex",
+    "line": 16,
+    "context": "function loadIndex(): SectionResult[] {\n  const candidates = [\n    path.resolve(process.cwd(), '..', 'generated', 'index', 'docs.index.json'),\n    path.resolve(process.cwd(), 'generated', 'index', 'docs.index.json'),\n  ];"
+  },
+  {
+    "file": "site/lib/search.ts",
+    "kind": "function",
+    "name": "escapeRegExp",
+    "line": 32,
+    "context": "function escapeRegExp(s: string): string {\n  return s.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');\n}\n\n// 쿼리 → 관련 섹션 반환 (LLM 없는 키워드 매칭)"
+  },
+  {
+    "file": "site/lib/search.ts",
+    "kind": "function",
+    "name": "searchSections",
+    "line": 37,
+    "context": "export function searchSections(query: string, limit = 10): SectionResult[] {\n  if (!query.trim()) return [];\n\n  const index   = loadIndex();\n  const terms   = query.toLowerCase().split(/\\s+/).filter(Boolean);"
+  },
+  {
+    "file": "site/lib/search.ts",
+    "kind": "type",
+    "name": "SectionResult",
+    "line": 4,
+    "context": "export type SectionResult = {\n  doc_id:   string;\n  slug:     string;\n  title:    string;\n  category: string;"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "findRoot",
+    "line": 13,
+    "context": "function findRoot(name: string): string | null {\n  const candidates = [\n    path.resolve(process.cwd(), name),\n    path.resolve(process.cwd(), '..', name),\n  ];"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "walk",
+    "line": 27,
+    "context": "function walk(dir: string): string[] {\n  if (!fs.existsSync(dir)) return [];\n  return fs.readdirSync(dir, { withFileTypes: true }).flatMap(e => {\n    const full = path.join(dir, e.name);\n    if (e.isDirectory()) return SKIP_DIRS.has(e.name) ? [] : walk(full);"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "num",
+    "line": 36,
+    "context": "function num(v: unknown, fallback = 3): number {\n  return typeof v === 'number' && isFinite(v) ? v : fallback;\n}\n\nexport function importanceScore(p: WikiPage): number {"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "importanceScore",
+    "line": 40,
+    "context": "export function importanceScore(p: WikiPage): number {\n  const s = p.clinical_priority * 0.35 + p.research_priority * 0.25 + p.foundational_priority * 0.25;\n  return p.pinned ? s + 2 : s;\n}\n"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "getPageBySlug",
+    "line": 66,
+    "context": "export function getPageBySlug(slug: string): WikiPage | undefined {\n  return getAllWikiPages().find(p => p.slug === slug);\n}\n\nconst backlinkIndex = cache((): Map<string, WikiPage[]> => {"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "getBacklinks",
+    "line": 90,
+    "context": "export function getBacklinks(id: string): WikiPage[] {\n  return backlinkIndex().get(id) ?? [];\n}\n\nexport function getCategories(): string[] {"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "getCategories",
+    "line": 94,
+    "context": "export function getCategories(): string[] {\n  return [...new Set(getAllWikiPages().map(p => p.category))].sort();\n}\n\nexport function sortedPages(pages: WikiPage[]): WikiPage[] {"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "sortedPages",
+    "line": 98,
+    "context": "export function sortedPages(pages: WikiPage[]): WikiPage[] {\n  return [...pages].sort((a, b) => importanceScore(b) - importanceScore(a));\n}\n\nexport function convertWikiLinks(content: string): string {"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "convertWikiLinks",
+    "line": 102,
+    "context": "export function convertWikiLinks(content: string): string {\n  const idMap = new Map<string, WikiPage>();\n  getAllWikiPages().forEach(p => {\n    idMap.set(p.slug.toLowerCase(), p);\n    idMap.set(p.title.toLowerCase(), p);"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "function",
+    "name": "getGeneratedBlocks",
+    "line": 116,
+    "context": "export function getGeneratedBlocks(type: 'insights' | 'papers' | 'relations', id: string): object[] {\n  if (!GENERATED_ROOT || !id) return [];\n  const ext  = { insights: '.insight.json', papers: '.papers.json', relations: '.relations.json' }[type];\n  const file = path.join(GENERATED_ROOT, type, `${i"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "const",
+    "name": "WIKI_ROOT",
+    "line": 21,
+    "context": "export const WIKI_ROOT      = findRoot('wiki');\nexport const GENERATED_ROOT = findRoot('generated');\n\nconst SKIP_DIRS = new Set(['50_PROMPTS', '90_LOGS']);\nconst WIKILINK  = /\\[\\[([^\\]|]+)(?:\\|([^\\]]+))?\\]\\]/g;"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "const",
+    "name": "GENERATED_ROOT",
+    "line": 22,
+    "context": "export const GENERATED_ROOT = findRoot('generated');\n\nconst SKIP_DIRS = new Set(['50_PROMPTS', '90_LOGS']);\nconst WIKILINK  = /\\[\\[([^\\]|]+)(?:\\|([^\\]]+))?\\]\\]/g;\n"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "const",
+    "name": "getAllWikiPages",
+    "line": 45,
+    "context": "export const getAllWikiPages = cache((): WikiPage[] => {\n  if (!WIKI_ROOT) return [];\n  return walk(WIKI_ROOT).map(file => {\n    const { data, content } = matter(fs.readFileSync(file, 'utf8'));\n    const slug = data.slug ?? path.basename(file, '.md');"
+  },
+  {
+    "file": "site/lib/wiki.ts",
+    "kind": "type",
+    "name": "WikiPage",
+    "line": 6,
+    "context": "export type WikiPage = {\n  id: string; slug: string; title: string; aliases: string[];\n  category: string; tags: string[]; content: string; sourcePath: string;\n  pinned: boolean; clinical_priority: number; research_priority: number;\n  foundational_priority: number; review_status?: string;"
+  },
+  {
+    "file": "site/lib/filetree.ts",
+    "kind": "function",
+    "name": "buildFileTree",
+    "line": 11,
+    "context": "export function buildFileTree(pages: WikiPage[]): TreeNode[] {\n  const root: Record<string, TreeNode> = {};\n\n  for (const page of pages) {\n    const parts = page.sourcePath.replace(/^wiki\\//, '').split('/');"
+  },
+  {
+    "file": "site/lib/filetree.ts",
+    "kind": "type",
+    "name": "TreeNode",
+    "line": 3,
+    "context": "export type TreeNode = {\n  name: string;\n  slug?: string;\n  title?: string;\n  children?: TreeNode[];"
+  },
+  {
+    "file": "site/app/api/search/route.ts",
+    "kind": "function",
+    "name": "GET",
+    "line": 4,
+    "context": "export async function GET(req: NextRequest) {\n  const q = req.nextUrl.searchParams.get('q') ?? '';\n  const results = searchSections(q, 10);\n  return NextResponse.json(results);\n}"
+  },
+  {
+    "file": "site/app/api/ingest/route.ts",
+    "kind": "function",
+    "name": "findWikiDir",
+    "line": 31,
+    "context": "function findWikiDir(category: string): string | null {\n  const candidates = [\n    path.resolve(process.cwd(), '..', 'wiki', category),\n    path.resolve(process.cwd(), 'wiki', category),\n  ];"
+  },
+  {
+    "file": "site/app/api/ingest/route.ts",
+    "kind": "function",
+    "name": "POST",
+    "line": 42,
+    "context": "export async function POST(req: NextRequest) {\n  const { text, filename, category = 'sources' } = await req.json();\n  if (!text?.trim()) return NextResponse.json({ error: '텍스트가 없습니다.' }, { status: 400 });\n\n  const apiKey = process.env.ANTHROPIC_API_KEY;"
+  },
+  {
+    "file": "site/app/page.tsx",
+    "kind": "component",
+    "name": "HomePage",
+    "line": 6,
+    "context": "export default function HomePage() {\n  const pages      = getAllWikiPages();\n  const top        = sortedPages(pages).slice(0, 8);\n  const byCategory = Object.entries(\n    pages.reduce<Record<string, typeof pages>>((acc, p) => {"
+  },
+  {
+    "file": "site/app/layout.tsx",
+    "kind": "component",
+    "name": "RootLayout",
+    "line": 7,
+    "context": "export default function RootLayout({ children }: { children: ReactNode }) {\n  return (\n    <html lang=\"ko\">\n      <body>\n        <div className=\"layout\">"
+  },
+  {
+    "file": "site/app/layout.tsx",
+    "kind": "const",
+    "name": "metadata",
+    "line": 5,
+    "context": "export const metadata = { title: 'KM Wiki', description: '김민석 LLM Wiki' };\n\nexport default function RootLayout({ children }: { children: ReactNode }) {\n  return (\n    <html lang=\"ko\">"
+  },
+  {
+    "file": "site/app/admin/page.tsx",
+    "kind": "component",
+    "name": "AdminPage",
+    "line": 6,
+    "context": "export default function AdminPage() {\n  const [text, setText]         = useState('');\n  const [filename, setFilename] = useState('');\n  const [category, setCategory] = useState<typeof CATEGORIES[number]>('sources');\n  const [result, setResult]     = useState('');"
+  },
+  {
+    "file": "site/app/search/page.tsx",
+    "kind": "component",
+    "name": "SearchPage",
+    "line": 10,
+    "context": "export default function SearchPage() {\n  const [query, setQuery]     = useState('');\n  const [results, setResults] = useState<SectionResult[]>([]);\n  const [loading, setLoading] = useState(false);\n"
+  },
+  {
+    "file": "site/app/category/[category]/page.tsx",
+    "kind": "component",
+    "name": "CategoryPage",
+    "line": 20,
+    "context": "export default function CategoryPage({ params }: { params: { category: string } }) {\n  const category = params.category;\n  const pages = getAllWikiPages().filter((page) => page.category === category);\n  if (pages.length === 0) notFound();\n"
+  },
+  {
+    "file": "site/app/wiki/[slug]/page.tsx",
+    "kind": "component",
+    "name": "WikiPage",
+    "line": 19,
+    "context": "export default function WikiPage({ params }: { params: { slug: string } }) {\n  const page = getPageBySlug(params.slug);\n  if (!page) notFound();\n\n  const backlinks = getBacklinks(page.id);"
+  },
+  {
+    "file": "scripts/graphify.py",
+    "kind": "function",
+    "name": "parse_fm",
+    "line": 21,
+    "context": "def parse_fm(text: str) -> dict:\n    m = FM_RE.match(text)\n    if not m: return {}\n    try: return yaml.safe_load(m.group(1)) or {}\n    except: return {}"
+  },
+  {
+    "file": "scripts/graphify.py",
+    "kind": "function",
+    "name": "main",
+    "line": 28,
+    "context": "def main():\n    nodes, edges = [], []\n    slug_map: dict[str, str] = {}   # 모든 식별자 → id\n\n    mds = [f for f in WIKI_ROOT.rglob(\"*.md\")"
+  },
+  {
+    "file": "scripts/jdocmunch.py",
+    "kind": "function",
+    "name": "parse_fm",
+    "line": 19,
+    "context": "def parse_fm(text: str) -> dict:\n    m = FM_RE.match(text)\n    if not m: return {}\n    try: return yaml.safe_load(m.group(1)) or {}\n    except: return {}"
+  },
+  {
+    "file": "scripts/jdocmunch.py",
+    "kind": "function",
+    "name": "split_sections",
+    "line": 26,
+    "context": "def split_sections(content: str) -> list[dict]:\n    \"\"\"H1~H6 기준으로 섹션 분리. 각 섹션 = {level, heading, body}\"\"\"\n    matches = list(HEAD_RE.finditer(content))\n    sections = []\n    for i, m in enumerate(matches):"
+  },
+  {
+    "file": "scripts/jdocmunch.py",
+    "kind": "function",
+    "name": "main",
+    "line": 40,
+    "context": "def main():\n    OUT.parent.mkdir(parents=True, exist_ok=True)\n    index = []\n\n    for md in WIKI_ROOT.rglob(\"*.md\"):"
+  },
+  {
+    "file": "scripts/ingest.py",
+    "kind": "function",
+    "name": "ingest",
+    "line": 39,
+    "context": "def ingest(path: Path) -> str:\n    text = path.read_text(encoding=\"utf-8\", errors=\"ignore\")[:8000]\n    msg = client.messages.create(\n        model=\"claude-opus-4-5\",\n        max_tokens=2000,"
+  },
+  {
+    "file": "scripts/ingest.py",
+    "kind": "function",
+    "name": "main",
+    "line": 49,
+    "context": "def main():\n    WIKI_SOURCES.mkdir(parents=True, exist_ok=True)\n    PROCESSED.parent.mkdir(parents=True, exist_ok=True)\n\n    processed = set(PROCESSED.read_text().splitlines()) if PROCESSED.exists() else set()"
+  },
+  {
+    "file": "scripts/jcodemunch.py",
+    "kind": "function",
+    "name": "extract_symbols",
+    "line": 39,
+    "context": "def extract_symbols(path: Path) -> list[dict]:\n    ext     = path.suffix\n    pats    = PATTERNS.get(ext, [])\n    if not pats: return []\n"
+  },
+  {
+    "file": "scripts/jcodemunch.py",
+    "kind": "function",
+    "name": "main",
+    "line": 63,
+    "context": "def main():\n    OUT.parent.mkdir(parents=True, exist_ok=True)\n    index = []\n\n    for root in CODE_ROOTS:"
+  },
+  {
+    "file": "scripts/graph.py",
+    "kind": "function",
+    "name": "parse_fm",
+    "line": 20,
+    "context": "def parse_fm(text: str) -> dict:\n    m = FRONTMATTER.match(text)\n    if not m: return {}\n    try: return yaml.safe_load(m.group(1)) or {}\n    except: return {}"
+  },
+  {
+    "file": "scripts/graph.py",
+    "kind": "function",
+    "name": "skip",
+    "line": 26,
+    "context": "def skip(md: Path) -> bool:\n    return md.relative_to(WIKI_ROOT).parts[0] in SKIP_DIRS\n\ndef main():\n    nodes, edges, slug_to_id = [], [], {}"
+  },
+  {
+    "file": "scripts/graph.py",
+    "kind": "function",
+    "name": "main",
+    "line": 29,
+    "context": "def main():\n    nodes, edges, slug_to_id = [], [], {}\n\n    mds = [f for f in WIKI_ROOT.rglob(\"*.md\") if not skip(f)]\n"
+  },
+  {
+    "file": "scripts/pubmed.py",
+    "kind": "function",
+    "name": "search_ids",
+    "line": 24,
+    "context": "def search_ids(query: str) -> list[str]:\n    mindate = (date.today() - timedelta(days=DAYS_BACK)).strftime(\"%Y/%m/%d\")\n    r = requests.get(f\"{BASE}/esearch.fcgi\", params={\n        \"db\": \"pubmed\", \"term\": query,\n        \"mindate\": mindate, \"datetype\": \"pdat\","
+  },
+  {
+    "file": "scripts/pubmed.py",
+    "kind": "function",
+    "name": "fetch_summary",
+    "line": 33,
+    "context": "def fetch_summary(pmid: str) -> dict:\n    r = requests.get(f\"{BASE}/esummary.fcgi\", params={\n        \"db\": \"pubmed\", \"id\": pmid, \"retmode\": \"json\", \"api_key\": API_KEY,\n    }, timeout=10)\n    return r.json().get(\"result\", {}).get(pmid, {})"
+  },
+  {
+    "file": "scripts/pubmed.py",
+    "kind": "function",
+    "name": "to_md",
+    "line": 39,
+    "context": "def to_md(pmid: str, s: dict, query: str) -> str:\n    authors = \", \".join(a.get(\"name\",\"\") for a in s.get(\"authors\",[])[:3])\n    if len(s.get(\"authors\",[])) > 3: authors += \" et al.\"\n    doi = next((x.get(\"value\",\"\") for x in s.get(\"elocationid\",[]) if x.get(\"eidtype\")==\"doi\"), \"\")\n    link = f\"http"
+  },
+  {
+    "file": "scripts/pubmed.py",
+    "kind": "function",
+    "name": "main",
+    "line": 79,
+    "context": "def main():\n    WIKI_SOURCES.mkdir(parents=True, exist_ok=True)\n    existing = {f.stem for f in WIKI_SOURCES.glob(\"pubmed-*.md\")}\n    new = 0\n"
+  }
+]
