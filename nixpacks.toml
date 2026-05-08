@@ -1,12 +1,5 @@
 [phases.setup]
-nixPkgs = [
-  "python312",
-  "python312Packages.requests",
-  "python312Packages.anthropic",
-  "python312Packages.pyyaml",
-  "python312Packages.python-frontmatter",
-  "nodejs_20"
-]
+nixPkgs = ["python311", "nodejs_20"]
 
 [variables]
 NIXPACKS_NO_CACHE = "1"
