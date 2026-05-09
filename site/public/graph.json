@@ -50,6 +50,13 @@
       "color": "#60a5fa"
     },
     {
+      "id": "CON-00004",
+      "slug": "meridian-transmission-theory",
+      "title": "경맥 유주·전변·낙맥 — 신경과학 재해석",
+      "category": "concepts",
+      "color": "#60a5fa"
+    },
+    {
       "id": "CON-00003",
       "slug": "yinyang-biaoli-redefinition",
       "title": "음양·표리 재정의",
@@ -62,6 +69,27 @@
       "title": "IMS·MPS 통합 임상 레퍼런스",
       "category": "sources",
       "color": "#34d399"
+    },
+    {
+      "id": "ENT-00010",
+      "slug": "herb-tier1",
+      "title": "고방약재 Tier 1 — 핵심 필수 약재",
+      "category": "entities",
+      "color": "#a78bfa"
+    },
+    {
+      "id": "ENT-00011",
+      "slug": "herb-tier2",
+      "title": "고방약재 Tier 2 — 중요 약재",
+      "category": "entities",
+      "color": "#a78bfa"
+    },
+    {
+      "id": "ENT-00012",
+      "slug": "herb-tier3",
+      "title": "고방약재 Tier 3 — 보조·가감 약재",
+      "category": "entities",
+      "color": "#a78bfa"
     },
     {
       "id": "ENT-00001",
@@ -123,6 +151,22 @@
       "target": "ENT-00001"
     },
     {
+      "source": "CON-00004",
+      "target": "CON-00001"
+    },
+    {
+      "source": "CON-00004",
+      "target": "CON-00002"
+    },
+    {
+      "source": "CON-00004",
+      "target": "ENT-00001"
+    },
+    {
+      "source": "CON-00004",
+      "target": "CON-00003"
+    },
+    {
       "source": "CON-00003",
       "target": "CON-00001"
     },
@@ -148,6 +192,26 @@
     },
     {
       "source": "SRC-00001",
+      "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00010",
+      "target": "CON-00001"
+    },
+    {
+      "source": "ENT-00010",
+      "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00011",
+      "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00011",
+      "target": "CON-00001"
+    },
+    {
+      "source": "ENT-00012",
       "target": "CON-00002"
     },
     {

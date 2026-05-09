@@ -176,6 +176,42 @@
       }
     },
     {
+      "id": "CON-00004",
+      "slug": "meridian-transmission-theory",
+      "title": "경맥 유주·전변·낙맥 — 신경과학 재해석",
+      "category": "concepts",
+      "tags": [
+        "경맥",
+        "낙맥",
+        "전변",
+        "ANS",
+        "신경절",
+        "합병증"
+      ],
+      "aliases": [
+        "전변 이론",
+        "낙맥 신경과학",
+        "경맥 유주 재해석"
+      ],
+      "headings": [
+        "경맥 유주·전변·낙맥 — 신경과학 재해석",
+        "핵심 명제",
+        "낙맥의 신경과학적 실체",
+        "낙맥 (絡脈) = 신경절 간 교차 연결",
+        "임상 예시",
+        "경맥 유주 = 전변 순서와 방향의 지도",
+        "육경 전변 = 신경절 파급의 단계적 확산",
+        "합병증 발생의 법칙",
+        "기경8맥 = 자율신경 간선망",
+        "IMS·Gunn = 경근병의 서양 재발견"
+      ],
+      "priorities": {
+        "clinical": 5,
+        "research": 5,
+        "foundational": 5
+      }
+    },
+    {
       "id": "CON-00003",
       "slug": "yinyang-biaoli-redefinition",
       "title": "음양·표리 재정의",
@@ -244,6 +280,107 @@
         "clinical": 5,
         "research": 4,
         "foundational": 4
+      }
+    },
+    {
+      "id": "ENT-00010",
+      "slug": "herb-tier1",
+      "title": "고방약재 Tier 1 — 핵심 필수 약재",
+      "category": "entities",
+      "tags": [
+        "약재",
+        "상한론",
+        "금궤요략",
+        "캄포",
+        "Tier1"
+      ],
+      "aliases": [
+        "Tier 1 약재",
+        "핵심 약재",
+        "상한론 핵심 약재"
+      ],
+      "headings": [
+        "고방약재 Tier 1 — 핵심 필수 약재",
+        "부자 (附子) | Aconiti Radix Lateralis | 통합점수 최상위",
+        "건강 (乾薑) | Zingiberis Rhizoma",
+        "계지 (桂枝) | Cinnamomi Ramulus",
+        "감초 (甘草) | Glycyrrhizae Radix",
+        "백작약 (白芍藥) | Paeoniae Radix Alba",
+        "황련 (黃連) | Coptidis Rhizoma",
+        "황금 (黃芩) | Scutellariae Radix",
+        "시호 (柴胡) | Bupleuri Radix",
+        "반하 (半夏) | Pinelliae Rhizoma"
+      ],
+      "priorities": {
+        "clinical": 5,
+        "research": 4,
+        "foundational": 5
+      }
+    },
+    {
+      "id": "ENT-00011",
+      "slug": "herb-tier2",
+      "title": "고방약재 Tier 2 — 중요 약재",
+      "category": "entities",
+      "tags": [
+        "약재",
+        "상한론",
+        "금궤요략",
+        "캄포",
+        "Tier2"
+      ],
+      "aliases": [
+        "Tier 2 약재"
+      ],
+      "headings": [
+        "고방약재 Tier 2 — 중요 약재",
+        "대황 (大黃) | Rhei Radix",
+        "복령 (茯苓) | Poria",
+        "백출 (白朮) | Atractylodis Macrocephalae Rhizoma",
+        "인삼 (人蔘) | Ginseng Radix",
+        "석고 (石膏) | Gypsum Fibrosum",
+        "세신 (細辛) | Asari Herba",
+        "택사 (澤瀉) | Alismatis Rhizoma",
+        "지황 (地黃) | Rehmanniae Radix",
+        "생강 (生薑) | Zingiberis Rhizoma Recens"
+      ],
+      "priorities": {
+        "clinical": 4,
+        "research": 3,
+        "foundational": 4
+      }
+    },
+    {
+      "id": "ENT-00012",
+      "slug": "herb-tier3",
+      "title": "고방약재 Tier 3 — 보조·가감 약재",
+      "category": "entities",
+      "tags": [
+        "약재",
+        "상한론",
+        "금궤요략",
+        "캄포",
+        "Tier3"
+      ],
+      "aliases": [
+        "Tier 3 약재"
+      ],
+      "headings": [
+        "고방약재 Tier 3 — 보조·가감 약재",
+        "오수유 (吳茱萸) | Evodiae Fructus",
+        "도인 (桃仁) | Persicae Semen",
+        "산조인 (酸棗仁) | Ziziphi Spinosae Semen",
+        "해백 (薤白) | Allii Macrostemi Bulbus",
+        "의이인 (薏苡仁) | Coicis Semen",
+        "사간 (射干) | Belamcandae Rhizoma",
+        "우황·서각 계열 및 기타",
+        "티어별 전략 요약",
+        "Related"
+      ],
+      "priorities": {
+        "clinical": 3,
+        "research": 3,
+        "foundational": 3
       }
     },
     {
@@ -386,6 +523,26 @@
       "type": "wikilink"
     },
     {
+      "source": "CON-00004",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00004",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00004",
+      "target": "ENT-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "CON-00004",
+      "target": "CON-00003",
+      "type": "wikilink"
+    },
+    {
       "source": "CON-00003",
       "target": "CON-00001",
       "type": "wikilink"
@@ -412,6 +569,31 @@
     },
     {
       "source": "SRC-00001",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00010",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00010",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00011",
+      "target": "CON-00002",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00011",
+      "target": "CON-00001",
+      "type": "wikilink"
+    },
+    {
+      "source": "ENT-00012",
       "target": "CON-00002",
       "type": "wikilink"
     },
