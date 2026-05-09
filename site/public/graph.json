@@ -36,6 +36,13 @@
       "color": "#94a3b8"
     },
     {
+      "id": "CON-00005",
+      "slug": "acupuncture-tonification-sedation-redefinition",
+      "title": "침 보사(補瀉) 재정의 — 닫힌계 에너지 재분배 모델",
+      "category": "concepts",
+      "color": "#60a5fa"
+    },
+    {
       "id": "CON-00001",
       "slug": "neuro-fascial-ans-framework",
       "title": "Neuro-Fascial ANS Framework",
@@ -121,6 +128,18 @@
     }
   ],
   "edges": [
+    {
+      "source": "CON-00005",
+      "target": "CON-00001"
+    },
+    {
+      "source": "CON-00005",
+      "target": "CON-00003"
+    },
+    {
+      "source": "CON-00005",
+      "target": "CON-00002"
+    },
     {
       "source": "CON-00001",
       "target": "ENT-00001"
