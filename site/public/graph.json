@@ -111,6 +111,13 @@
       "title": "TJ — 삼초경 (Triple Jiao)",
       "category": "entities",
       "color": "#a78bfa"
+    },
+    {
+      "id": "ENT-00020",
+      "slug": "quchi-zusanli-moxa-protocol",
+      "title": "곡지·족삼리·복부뜸 — ANS 재가동 프로토콜",
+      "category": "entities",
+      "color": "#a78bfa"
     }
   ],
   "edges": [
@@ -253,6 +260,26 @@
     {
       "source": "ENT-00002",
       "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00020",
+      "target": "CON-00003"
+    },
+    {
+      "source": "ENT-00020",
+      "target": "CON-00001"
+    },
+    {
+      "source": "ENT-00020",
+      "target": "CON-00003"
+    },
+    {
+      "source": "ENT-00020",
+      "target": "CON-00002"
+    },
+    {
+      "source": "ENT-00020",
+      "target": "ENT-00001"
     }
   ]
 }
