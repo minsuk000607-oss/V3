@@ -78,6 +78,13 @@
       "color": "#60a5fa"
     },
     {
+      "id": "CON-00007",
+      "slug": "bl1-bl2-dual-layer-theory",
+      "title": "BL1선·BL2선 이중 레이어 이론 — 내장·근막 통증 분류 체계",
+      "category": "concepts",
+      "color": "#60a5fa"
+    },
+    {
       "id": "SRC-00001",
       "slug": "ims-mps-integration",
       "title": "IMS·MPS 통합 임상 레퍼런스",
@@ -222,6 +229,18 @@
     {
       "source": "CON-00003",
       "target": "ENT-00001"
+    },
+    {
+      "source": "CON-00007",
+      "target": "CON-00001"
+    },
+    {
+      "source": "CON-00007",
+      "target": "CON-00001"
+    },
+    {
+      "source": "CON-00007",
+      "target": "CON-00002"
     },
     {
       "source": "SRC-00001",
