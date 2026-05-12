@@ -80,7 +80,7 @@
     {
       "id": "CON-00007",
       "slug": "bl1-bl2-dual-layer-theory",
-      "title": "BL1선·BL2선 이중 레이어 이론 — 내장·근막 통증 분류 체계",
+      "title": "BL1선·BL2선 이중 레이어 이론 — 척추 자율신경 접근 체계 재정의",
       "category": "concepts",
       "color": "#60a5fa"
     },
@@ -229,10 +229,6 @@
     {
       "source": "CON-00003",
       "target": "ENT-00001"
-    },
-    {
-      "source": "CON-00007",
-      "target": "CON-00001"
     },
     {
       "source": "CON-00007",
