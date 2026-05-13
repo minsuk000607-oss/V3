@@ -3618,6 +3618,120 @@
     ],
     "section": "Related",
     "level": 2,
-    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[음양·표리 재정의]]\n- [[상한론 ANS 붕괴 모델]]\n- [[SFAL SBAL]]\n- [[DFL]]\n- [[IMS MPS 통합 임상]]"
+    "body": "- [[Neuro-Fascial ANS Framework]]\n- [[음양·표리 재정의]]\n- [[상한론 ANS 붕괴 모델]]\n- [[SFAL SBAL]]\n- [[DFL]]\n- [[IMS MPS 통합 임상]]\n\n---"
+  },
+  {
+    "doc_id": "ENT-00020",
+    "slug": "quchi-zusanli-moxa-protocol",
+    "title": "곡지·족삼리·복부뜸 — ANS 재가동 프로토콜",
+    "category": "entities",
+    "tags": [
+      "곡지",
+      "족삼리",
+      "뜸",
+      "ANS",
+      "미주신경",
+      "합혈",
+      "직구",
+      "임맥"
+    ],
+    "section": "현대 연구 근거 (논문 기반)",
+    "level": 2,
+    "body": ""
+  },
+  {
+    "doc_id": "ENT-00020",
+    "slug": "quchi-zusanli-moxa-protocol",
+    "title": "곡지·족삼리·복부뜸 — ANS 재가동 프로토콜",
+    "category": "entities",
+    "tags": [
+      "곡지",
+      "족삼리",
+      "뜸",
+      "ANS",
+      "미주신경",
+      "합혈",
+      "직구",
+      "임맥"
+    ],
+    "section": "뇌 혈류·뇌보호",
+    "level": 3,
+    "body": "**곡지+족삼리 전침 → 뇌허혈-재관류 손상 개선**\n- PMC3702718: 곡지(LI11)·족삼리(ST36) 전침이 허혈 뇌조직 ERK 시그널링 활성화 → 세포사멸 억제 · 뇌경색 부위 축소\n- 동 연구: PI3K/Akt 경로 활성화 → 뇌 신경학적 결손 유의하게 개선\n- 이 조합이 중국 임상에서 뇌졸중 치료에 가장 많이 쓰이는 혈위 조합으로 확인\n\n```\n곡지(LI11) 양명합혈\n→ 강한 구심성 입력\n→ 시상하부·뇌간 직접 활성 (fMRI 확인)\n= ANS 5레벨 L1(중추) 접근\n```"
+  },
+  {
+    "doc_id": "ENT-00020",
+    "slug": "quchi-zusanli-moxa-protocol",
+    "title": "곡지·족삼리·복부뜸 — ANS 재가동 프로토콜",
+    "category": "entities",
+    "tags": [
+      "곡지",
+      "족삼리",
+      "뜸",
+      "ANS",
+      "미주신경",
+      "합혈",
+      "직구",
+      "임맥"
+    ],
+    "section": "소화기 보호",
+    "level": 3,
+    "body": "**족삼리+곡지 → 장 점막 장벽·장관 면역 동시 보호**\n- 패혈증 쥐 모델: ST36·LI11 전침 → 장 염증 완화·장 점막 장벽 보호·장관 T세포 기능 유지\n- ST36 → 미주신경-부신 축(vagal-adrenal axis) 자극 → 항염 반응 조절 (신경해부학적 근거 확인)\n- 위 전정부(antrum) 수축 기능 개선 RCT 진행 중 (Shanghai Municipal Hospital, 2021)\n\n```\n족삼리(ST36) 위경합혈\n→ 미주신경 원심성↑\n→ 장 점막 보호 + 장관 면역\n= 말초 ANS 소화기 직접\n```"
+  },
+  {
+    "doc_id": "ENT-00020",
+    "slug": "quchi-zusanli-moxa-protocol",
+    "title": "곡지·족삼리·복부뜸 — ANS 재가동 프로토콜",
+    "category": "entities",
+    "tags": [
+      "곡지",
+      "족삼리",
+      "뜸",
+      "ANS",
+      "미주신경",
+      "합혈",
+      "직구",
+      "임맥"
+    ],
+    "section": "Gut-Brain Axis 동시 작용 ★",
+    "level": 3,
+    "body": "**가장 중요한 발견**\n- MCAO/R 모델(PubMed 36052308): 곡지·족삼리 전침 → 뇌 운동 기능 회복 + 장내 미생물 단쇄지방산(SCFAs) 변화 동반\n- = 뇌와 장이 동일 자침으로 **동시에** 반응하는 경로 확인\n\n```\n곡지(뇌 CNS 레벨) + 족삼리(말초 소화기 ANS)\n→ Gut-Brain Axis 양쪽 동시 자극\n→ 뇌-소화기 혈류 동시 개선\n\n= 이 조합이 ANS 재가동 프로토콜의\n  기전으로 타당함을 실험적으로 지지\n```"
+  },
+  {
+    "doc_id": "ENT-00020",
+    "slug": "quchi-zusanli-moxa-protocol",
+    "title": "곡지·족삼리·복부뜸 — ANS 재가동 프로토콜",
+    "category": "entities",
+    "tags": [
+      "곡지",
+      "족삼리",
+      "뜸",
+      "ANS",
+      "미주신경",
+      "합혈",
+      "직구",
+      "임맥"
+    ],
+    "section": "fMRI 활성화 부위 (Frontiers Neurology 2022, 메타분석)",
+    "level": 3,
+    "body": "족삼리(ST36) 자침 시 활성화:\n- 우측 대뇌 하전두이랑(IFG)\n- 대상회(cingulate gyrus)\n- 체성감각·운동 영역\n- 소뇌\n- 변연계\n\n```\n→ 시상하부·변연계 활성 = ANS 조절 중추 직접 반응\n→ 체성감각 활성 = 구심성 신호 상행 확인\n```"
+  },
+  {
+    "doc_id": "ENT-00020",
+    "slug": "quchi-zusanli-moxa-protocol",
+    "title": "곡지·족삼리·복부뜸 — ANS 재가동 프로토콜",
+    "category": "entities",
+    "tags": [
+      "곡지",
+      "족삼리",
+      "뜸",
+      "ANS",
+      "미주신경",
+      "합혈",
+      "직구",
+      "임맥"
+    ],
+    "section": "민석 프레임 통합 해석",
+    "level": 3,
+    "body": "```\n기존 ANS 재가동 프로토콜:\n곡지(CNS 레벨) + 족삼리(말초 ANS) + 복부뜸(임맥)\n→ 위에서 아래로 동시 재가동\n\n논문이 확인한 것:\n1. 곡지+족삼리 → 뇌 보호 (PI3K/Akt, ERK)\n2. 곡지+족삼리 → 장 보호 (미주신경-부신 축)\n3. 두 효과가 동일 자침으로 동시 발생 (SCFAs)\n\n= 귀납 2000년 + 연역(ANS 이론) + 실험 검증\n  세 레이어가 일치하는 지점\n```\n\n**관련 논문:**\n- PMC3702718 (ERK pathway, 뇌허혈)\n- PubMed 36052308 (SCFAs, Gut-Brain Axis)\n- Frontiers Neurology 930753 (fMRI 메타분석)\n- Aging-US 103420 (SIRT1-FOXO1, 뇌보호)"
   }
 ]
